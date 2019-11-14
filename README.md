@@ -1,10 +1,12 @@
 # Projeto no-pain-no-gain
-### Clonando o Repositório
-Para clonar o repositório a só usar o comando abixo. É possivel pré-configurar a sua conta de login adicionando CONTA_DE_LOGIN@ antes de de github.
-> git clone https://github.com/BeahIF/no-pain-no-gain.git
-### Instalando Pacotes
+### Clonando o repositório
+Para clonar o repositório a só usar o comando abixo. É possível pré-configurar a sua conta de login adicionando CONTA_DE_LOGIN@ antes de github.
+```
+git clone https://github.com/BeahIF/no-pain-no-gain.git
+```
+### Instalando os pacotes
 Para rodar o projeto é nescessário instalar todos os pacotes nescessários. 
-Para instalar o ionic de forma global, para qualquer usuario chamar o comando, é só usar o comando abaixo.
+Para instalar o ionic de forma global, para qualquer usuario chamar o comando, é só usar o comando abaixo com o usuario administrador.
 
 ```
 npm -g install ionic
