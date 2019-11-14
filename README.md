@@ -6,7 +6,7 @@ git clone https://github.com/BeahIF/no-pain-no-gain.git
 ```
 ### Instalando os pacotes
 Para rodar o projeto é nescessário instalar todos os pacotes nescessários. 
-Para instalar o ionic de forma global, para qualquer usuario chamar o comando, é só usar o comando abaixo com o usuario administrador.
+Para instalar o ionic de forma global, para qualquer usuario chamar o comando, é só usar o comando abaixo **como usuario administrador**.
 
 ```
 npm -g install ionic
