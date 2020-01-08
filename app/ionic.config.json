@@ -1,5 +1,7 @@
 {
   "name": "no-pain-no-gain",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
