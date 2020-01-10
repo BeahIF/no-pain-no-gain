@@ -25,6 +25,7 @@
     "@ionic-native/status-bar": "^5.19.1",
     "@ionic/angular": "^4.11.7",
     "cordova-plugin-googlemaps": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+    "cordova-plugin-vr-view": "file:cordova-plugin-vr-view",
     "core-js": "^2.6.11",
     "rxjs": "^6.5.4",
     "tslib": "^1.9.0",
@@ -59,7 +60,8 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-googlemaps": {}
+      "cordova-plugin-googlemaps": {},
+      "cordova-plugin-vr-view": {}
     }
   }
 }
