@@ -5,7 +5,23 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },  {
+    path: 'image',
+    loadChildren: () => import('./image/image.module').then( m => m.ImagePageModule)
+  },
+  {
+    path: 'video',
+    loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
+  },
+  {
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
+  },
+  {
+    path: 'info',
+    loadChildren: () => import('./info/info.module').then( m => m.InfoPageModule)
   }
+
 ];
 @NgModule({
   imports: [
