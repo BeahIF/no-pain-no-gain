@@ -5,6 +5,9 @@ import { RouteReuseStrategy } from '@angular/router';
 //Youtube Video Player
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 
+//Photo View
+import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
+
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
@@ -20,6 +23,7 @@ import { AppComponent } from './app.component';
     StatusBar,
     SplashScreen,
     YoutubeVideoPlayer,
+    PhotoViewer,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

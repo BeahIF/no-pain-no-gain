@@ -1,6 +1,8 @@
 //Original
 
 import { Component, OnInit } from '@angular/core';
+import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-image',
@@ -9,9 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImagePage implements OnInit {
 
-  constructor() { }
+  constructor(public photoViewer: PhotoViewer, public platform: Platform) {
+    this.platform.ready().then(()=> {
+      var title = "PhotoViewer";
+      var photoUrl = "https://ionicframework.com/docs/demos/api/card/madison.jpg";
+      var options = {
+        share:true
+      }
+      this.photoViewer.show(photoUrl,title,options);
+    })
+   }
 
   ngOnInit() {
+  }
+
+  view(view){
+    this.photoViewer.show(view);
   }
 
 }
