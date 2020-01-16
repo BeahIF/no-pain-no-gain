@@ -1,8 +1,5 @@
-//Original
-
 import { Component, OnInit } from '@angular/core';
 import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
-import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-image',
@@ -11,16 +8,32 @@ import { Platform } from '@ionic/angular';
 })
 export class ImagePage implements OnInit {
 
-  constructor(public photoViewer: PhotoViewer, public platform: Platform) {
-    this.platform.ready().then(()=> {
-      var title = "PhotoViewer";
-      var photoUrl = "https://ionicframework.com/docs/demos/api/card/madison.jpg";
-      var options = {
-        share:true
+  public cards: Array<Object> = [];
+
+  constructor(private photoViewer: PhotoViewer) {
+    this.cards = [
+      {
+        "place": "TESTE1",
+        "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
+        "description": "DESCR1"
+      },
+      {
+        "place": "TESTE2",
+        "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
+        "description": "DESCR2"
+      },
+      {
+        "place": "TESTE3",
+        "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
+        "description": "DESCR3"
+      },
+      {
+        "place": "TESTE4",
+        "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
+        "description": "DESCR4"
       }
-      this.photoViewer.show(photoUrl,title,options);
-    })
-   }
+    ]     
+  }
 
   ngOnInit() {
   }
@@ -66,3 +79,14 @@ export class Tab1Page {
 //   }
 //   );
 // }
+
+/*    EXEMPLO PHOTOVIEWER
+this.platform.ready().then(()=> {
+  var title = "PhotoViewer";
+  var photoUrl = "https://ionicframework.com/docs/demos/api/card/madison.jpg";
+  var options = {
+    share:true
+  }
+  this.photoViewer.show(photoUrl,title,options);
+})
+*/
