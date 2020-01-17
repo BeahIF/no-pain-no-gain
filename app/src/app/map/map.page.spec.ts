@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+//import { IonicModule } from '@ionic/angular';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { MapPage } from './map.page';
 
@@ -10,13 +11,21 @@ describe('MapPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ MapPage ],
-      imports: [IonicModule.forRoot()]
-    }).compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      //imports: [IonicModule.forRoot()]
+    })
+    .compileComponents();
 
     fixture = TestBed.createComponent(MapPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
+  
+  beforeEach(() => {
+    fixture = TestBed.createComponent(MapPage);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
