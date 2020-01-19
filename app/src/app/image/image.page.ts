@@ -15,22 +15,26 @@ export class ImagePage implements OnInit {
       {
         "place": "TESTE1",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
-        "description": "DESCR1"
+        "description": "DESCR1",
+        "vr": ""
       },
       {
         "place": "TESTE2",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
-        "description": "DESCR2"
+        "description": "DESCR2",
+        "vr": ""
       },
       {
         "place": "TESTE3",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
-        "description": "DESCR3"
+        "description": "DESCR3",
+        "vr": ""
       },
       {
         "place": "TESTE4",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
-        "description": "DESCR4"
+        "description": "DESCR4",
+        "vr": ""
       }
     ]     
   }
@@ -38,11 +42,32 @@ export class ImagePage implements OnInit {
   ngOnInit() {
   }
 
-  view(view){
-    this.photoViewer.show(view);
+  view(photoUrl){
+    this.photoViewer.show(photoUrl);
+  }
+
+  vr(vrUrl){
+    window['VrView'].showPhoto(vrUrl,
+      {
+          inputType: "TYPE_STEREO_OVER_UNDER",
+          startDisplayMode: "DISPLAY_MODE_FULLSCREEN"
+      }
+    );
   }
 
 }
+
+/*    EXEMPLO PHOTOVIEWER
+this.platform.ready().then(()=> {
+  var title = "PhotoViewer";
+  var photoUrl = "https://ionicframework.com/docs/demos/api/card/madison.jpg";
+  var options = {
+    share:true
+  }
+  this.photoViewer.show(photoUrl,title,options);
+})
+*/
+
 /*
 //Codigo da Bea com adaptações
 import { Component } from '@angular/core';
@@ -80,13 +105,3 @@ export class Tab1Page {
 //   );
 // }
 
-/*    EXEMPLO PHOTOVIEWER
-this.platform.ready().then(()=> {
-  var title = "PhotoViewer";
-  var photoUrl = "https://ionicframework.com/docs/demos/api/card/madison.jpg";
-  var options = {
-    share:true
-  }
-  this.photoViewer.show(photoUrl,title,options);
-})
-*/
