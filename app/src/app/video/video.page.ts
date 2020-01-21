@@ -7,14 +7,19 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
   styleUrls: ['./video.page.scss'],
 })
 export class VideoPage implements OnInit {
+  videos = [
+    'i1DiaXP9nCk',
+    'i1DiaXP9nCk',
+    'i1DiaXP9nCk'
+  ];
 
   constructor(private youtube: YoutubeVideoPlayer) { }
 
   ngOnInit() {
   }
 
-  watch(watch){
-    this.youtube.openVideo(watch);
+  watch(urlVideo){
+    this.youtube.openVideo(urlVideo);
   }
 
 }

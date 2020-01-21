@@ -20,6 +20,14 @@ const routes: Routes = [
   {
     path: 'info',
     loadChildren: () => import('./info/info.module').then( m => m.InfoPageModule)
+  },
+  {
+    path: 'byte',
+    loadChildren: () => import('./byte/byte.module').then( m => m.BytePageModule)
+  },
+  {
+    path: 'peld',
+    loadChildren: () => import('./peld/peld.module').then( m => m.PeldPageModule)
   }
 
 ];
