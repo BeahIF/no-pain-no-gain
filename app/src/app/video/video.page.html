@@ -7,7 +7,7 @@
 <ion-content>
 
   <ion-list no-lines>
-    <ion-item (click)='viewVideo(video.items[0].id)' *ngFor="let video of videos">
+    <ion-item (click)='watch(video.items[0].id)' *ngFor="let video of videos">
       <ion-thumbnail item-start>
         <img [src]="video.items[0].snippet.thumbnails.standard.url">
       </ion-thumbnail>
