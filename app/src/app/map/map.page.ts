@@ -40,7 +40,7 @@ export class MapPage implements OnInit {
         'zoom': true
       }
     });
-
+    this.map.setMapTypeId ('HYBRID');
     let htmlInfoWindow = new HtmlInfoWindow();
 
     // flip-flop contents

@@ -7,30 +7,12 @@
 <ion-content>
 
   <ion-list no-lines>
-    <ion-item (click)='viewVideo(video)' *ngFor="let video of videos">
+    <ion-item (click)='viewVideo(video.items[0].id)' *ngFor="let video of videos">
       <ion-thumbnail item-start>
-        <img [src]="video.snippet.thumbnails.default.url">
+        <img [src]="video.items[0].snippet.thumbnails.standard.url">
       </ion-thumbnail>
-      <h2>{{video.snippet.title}}</h2>
-      <p>{{ video.snippet.publishedAt | date:'short' }}</p>
+      <h2>{{video.items[0].snippet.title}}</h2>
+      <p>{{ video.items[0].snippet.publishedAt | date:'short' }}</p>
     </ion-item>
   </ion-list>
-
-  <!--
-  <ion-card *ngFor="let video of videos">
-    <ion-item>
-      <ion-label>{{ video.title }}</ion-label>
-    </ion-item>
-
-    <div class="thumbnail-wrapper">
-      <img (click)="watch(video.id)" src="{{ video.thumbnail }}" />
-      <button>Assistir</button>
-    </div>
-
-    <ion-card-content>
-      {{ video.description }}
-    </ion-card-content>
-  </ion-card>
-  -->
-
 </ion-content>
