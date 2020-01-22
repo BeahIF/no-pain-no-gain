@@ -1,34 +1,42 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Info</ion-title>
+    <ion-title>PELD</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+    <img src="assets/icon/peld.png">
+    <div class="ion-text-center">
+      <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      <br><br>Versão 1.0
+    </div>
+
+<!--
   <ion-list no-border>
 
-    <ion-item [routerLink]="['/byte']" routerDirection="forward">
-      <ion-icon name='planet' item-start></ion-icon>
-      <ion-label>
-        Byte Jr.
-      </ion-label>
-      <ion-icon name='arrow-forward' item-end></ion-icon>
-    </ion-item>
-
     <ion-item [routerLink]="['/peld']" routerDirection="forward">
-      <ion-icon name='planet' item-start></ion-icon>
       <ion-label>
         PELD
       </ion-label>
       <ion-icon name='arrow-forward' item-end></ion-icon>
     </ion-item>
 
+    <ion-item [routerLink]="['/byte']" routerDirection="forward">
+      <ion-label>
+        Desenvolvedores
+      </ion-label>
+      <ion-icon name='arrow-forward' item-end></ion-icon>
+    </ion-item>
+
   </ion-list>
-  
-  <ion-list inset>
-    <button ion-item *ngFor="let item of items">
-      {{ item }}
-    </button>  
-  </ion-list>
+-->
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button [routerLink]="['/peld']" routerDirection="forward" expand="block" fill="outline">Sobre o PELD</ion-button>
+    <ion-button [routerLink]="['/byte']" routerDirection="forward" expand="block" fill="outline">Desenvolvedores</ion-button>
+  </ion-toolbar>
+</ion-footer>

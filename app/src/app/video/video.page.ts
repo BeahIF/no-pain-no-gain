@@ -35,5 +35,3 @@ export class VideoPage implements OnInit {
   }
 
 }
-
-
