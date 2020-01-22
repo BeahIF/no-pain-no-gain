@@ -8,7 +8,7 @@ import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 })
 export class ImagePage implements OnInit {
 
-  public cards: Array<Object> = [];
+  public cards: Array<Object> = []; 
 
   constructor(private photoViewer: PhotoViewer) {
     this.cards = [
@@ -16,25 +16,25 @@ export class ImagePage implements OnInit {
         "place": "TESTE1",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
         "description": "DESCR1",
-        "vr": ""
+        "vr": "'https://storage.googleapis.com/vrview/examples/coral.jpg'"
       },
       {
         "place": "TESTE2",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
         "description": "DESCR2",
-        "vr": ""
+        "vr": "'https://storage.googleapis.com/vrview/examples/coral.jpg'"
       },
       {
         "place": "TESTE3",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
         "description": "DESCR3",
-        "vr": ""
+        "vr": "'https://storage.googleapis.com/vrview/examples/coral.jpg'"
       },
       {
         "place": "TESTE4",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
         "description": "DESCR4",
-        "vr": ""
+        "vr": "'https://storage.googleapis.com/vrview/examples/coral.jpg'"
       }
     ]     
   }
@@ -42,8 +42,8 @@ export class ImagePage implements OnInit {
   ngOnInit() {
   }
 
-  view(photoUrl){
-    this.photoViewer.show(photoUrl);
+  view(photoUrl, title){
+    this.photoViewer.show(photoUrl, title);
   }
 
   vr(vrUrl){
@@ -67,41 +67,4 @@ this.platform.ready().then(()=> {
   this.photoViewer.show(photoUrl,title,options);
 })
 */
-
-/*
-//Codigo da Bea com adaptações
-import { Component } from '@angular/core';
-import { ProviderService } from '../provider.service';
-//import { NavLifeCycles} from '../../utils/ionic/nav/nav-lifecycles';
-import { NavController, IonicPage, NavParams, ToastController } from 'ionic-angular';
-import { Image } from '../models/Images.js';
-@Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
-})
-export class Tab1Page {
-  images: Array<Image> = new Array<Image>();
-  constructor(private imageProvider: ProviderService) {
-    //Não sei por que ela instanciou um objeto que deveria ser passado ao contrutor
-    //imageProvider = new ProviderService()
-    imageProvider.list_images().subscribe(data => {
-      this.images = data;
-    }, err => {
-
-    }
-    );
-  }
-
-};
-*/
-
-// ionViewDidLoad(){
-//   this.imageProvider.list_image().subscribe(data => {
-//     this.images = data;
-//   },err=>{
-
-//   }
-//   );
-// }
 
