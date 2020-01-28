@@ -54,17 +54,5 @@ export class ImagePage implements OnInit {
       }
     );
   }
-
 }
-
-/*    EXEMPLO PHOTOVIEWER
-this.platform.ready().then(()=> {
-  var title = "PhotoViewer";
-  var photoUrl = "https://ionicframework.com/docs/demos/api/card/madison.jpg";
-  var options = {
-    share:true
-  }
-  this.photoViewer.show(photoUrl,title,options);
-})
-*/
 
