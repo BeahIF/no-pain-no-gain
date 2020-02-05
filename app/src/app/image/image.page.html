@@ -12,14 +12,13 @@
       <ion-button (click)="vr(card.vr)" fill="outline" slot="end">360°</ion-button>
     </ion-item>
 
-    <div class="thumbnail-wrapper">
-      <img (click)="view(card.image, card.place)" src="{{ card.image }}"/>
+    <div (click)="view(card.image, card.place)" class="thumbnail-wrapper">
+      <img src="{{ card.image }}"/>
       <ion-icon name="expand" color="light" style="zoom:2.0;"></ion-icon>
-    </div> 
+    </div>
 
     <ion-card-content>
       {{ card.description }}
     </ion-card-content>
   </ion-card>
-
 </ion-content>

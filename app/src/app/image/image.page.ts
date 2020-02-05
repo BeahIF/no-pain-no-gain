@@ -8,33 +8,33 @@ import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 })
 export class ImagePage implements OnInit {
 
-  public cards: Array<Object> = []; 
-
+  public cards: Array<Object> = [];
+  
   constructor(private photoViewer: PhotoViewer) {
     this.cards = [
       {
         "place": "TESTE1",
-        "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
+        "image": "assets/image/image_1.jpg",
         "description": "DESCR1",
-        "vr": "'https://storage.googleapis.com/vrview/examples/coral.jpg'"
+        "vr": "assets/vr/vr_1.jpg"
       },
       {
         "place": "TESTE2",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
         "description": "DESCR2",
-        "vr": "'https://storage.googleapis.com/vrview/examples/coral.jpg'"
+        "vr": "https://storage.googleapis.com/vrview/examples/coral.jpg"
       },
       {
         "place": "TESTE3",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
         "description": "DESCR3",
-        "vr": "'https://storage.googleapis.com/vrview/examples/coral.jpg'"
+        "vr": "https://storage.googleapis.com/vrview/examples/coral.jpg"
       },
       {
         "place": "TESTE4",
         "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
         "description": "DESCR4",
-        "vr": "'https://storage.googleapis.com/vrview/examples/coral.jpg'"
+        "vr": "https://storage.googleapis.com/vrview/examples/coral.jpg"
       }
     ]     
   }
@@ -47,12 +47,11 @@ export class ImagePage implements OnInit {
   }
 
   vr(vrUrl){
-    window['VrView'].showPhoto(vrUrl,
+    window['VrView'].showPhotoFromAppFolder(vrUrl,
       {
-          inputType: "TYPE_STEREO_OVER_UNDER",
+          inputType: "TYPE_MONO",
           startDisplayMode: "DISPLAY_MODE_FULLSCREEN"
       }
     );
   }
 }
-
