@@ -13,105 +13,129 @@ export class ImagePage implements OnInit {
   constructor(private photoViewer: PhotoViewer) {
     this.cards = [
       {
-        "place": "TESTE1",
+        "place": "Sem localização",
         "image": "assets/image/image_1.jpg",
-        "description": "DESCR1",
+        "description": "",
         "vr": "assets/vr/vr_1.jpg"
       },
       {
-        "place": "TESTE2",
+        "place": "32º01'31S - 52º06'21W",
         "image": "assets/image/image_2.jpeg",
-        "description": "DESCR2",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "Sem localização",
         "image": "assets/image/image_3.jpeg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE4",
+        "place": "Sem localização",
         "image": "assets/image/image_4.jpg",
-        "description": "DESCR4",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º00'02S - 52º08'14W",
         "image": "assets/image/image_5.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "-32º04'09S - 52º09'35W",
         "image": "assets/image/image_6.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º10'54S - 52º04'47W",
         "image": "assets/image/image_7.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º08'58S- 52º06'03W",
         "image": "assets/image/image_8.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º12'21S - 52º10'26W",
         "image": "assets/image/image_9.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º10'44S- 52º05'36W",
         "image": "assets/image/image_10.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º08'58S - 52º05'10W",
         "image": "assets/image/image_11.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º12'21S - 52º10'26W",
         "image": "assets/image/image_12.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º10'14S - 52º07'42W",
         "image": "assets/image/image_13.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "32º01'01S - 52º08'17W",
         "image": "assets/image/image_14.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "Sem localização",
         "image": "assets/image/image_15.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "Sem localização",
         "image": "assets/image/image_16.jpg",
-        "description": "DESCR3",
+        "description": "",
         "vr": ""
       },
       {
-        "place": "TESTE3",
+        "place": "Sem localização",
         "image": "assets/image/image_17.jpg",
-        "description": "DESCR3",
+        "description": "",
+        "vr": ""
+      },
+      {
+        "place": "32º09'42S - 52º06'00W",
+        "image": "assets/image/image_18.jpg",
+        "description": "",
+        "vr": ""
+      },
+      {
+        "place": "32º09'57S - 52º05'51W",
+        "image": "assets/image/image_19.jpg",
+        "description": "",
+        "vr": ""
+      },
+      {
+        "place": "32º08'40S - 52º04'11W",
+        "image": "assets/image/image_20.jpg",
+        "description": "",
+        "vr": ""
+      },
+      {
+        "place": "32º12'21S - 52º10'26W",
+        "image": "assets/image/image_21.jpg",
+        "description": "",
         "vr": ""
       }
     ]     
