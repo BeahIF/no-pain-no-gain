@@ -34,9 +34,9 @@
             <manifest xmlns:tools="http://schemas.android.com/tools" />
         </edit-config>
 
-        <edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
+        <!--<edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
             <uses-sdk tools:overrideLibrary="com.google.vr.widgets.video,com.google.vr.widgets.pano,com.google.vr.widgets.common" />
-        </edit-config>
+        </edit-config>-->
 
         <source-file src="src/android/java/it/tangodev/cordovapluginvrview/VrView.java" target-dir="src/it/tangodev/cordovapluginvrview/"/>
         <source-file src="src/android/java/it/tangodev/cordovapluginvrview/VrVideoActivity.java" target-dir="src/it/tangodev/cordovapluginvrview/"/>

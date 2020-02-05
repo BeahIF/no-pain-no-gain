@@ -20,21 +20,99 @@ export class ImagePage implements OnInit {
       },
       {
         "place": "TESTE2",
-        "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
+        "image": "assets/image/image_2.jpeg",
         "description": "DESCR2",
-        "vr": "https://storage.googleapis.com/vrview/examples/coral.jpg"
+        "vr": ""
       },
       {
         "place": "TESTE3",
-        "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
+        "image": "assets/image/image_3.jpeg",
         "description": "DESCR3",
-        "vr": "https://storage.googleapis.com/vrview/examples/coral.jpg"
+        "vr": ""
       },
       {
         "place": "TESTE4",
-        "image": "https://ionicframework.com/docs/demos/api/card/madison.jpg",
+        "image": "assets/image/image_4.jpg",
         "description": "DESCR4",
-        "vr": "https://storage.googleapis.com/vrview/examples/coral.jpg"
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_5.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_6.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_7.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_8.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_9.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_10.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_11.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_12.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_13.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_14.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_15.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_16.jpg",
+        "description": "DESCR3",
+        "vr": ""
+      },
+      {
+        "place": "TESTE3",
+        "image": "assets/image/image_17.jpg",
+        "description": "DESCR3",
+        "vr": ""
       }
     ]     
   }
