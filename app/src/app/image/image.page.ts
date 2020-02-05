@@ -164,11 +164,11 @@ export class ImagePage implements OnInit {
   ngOnInit() {
   }
 
-  view(photoUrl, title){
+  photoView(photoUrl, title){
     this.photoViewer.show(photoUrl, title);
   }
 
-  vr(vrUrl){
+  vrView(vrUrl){
     window['VrView'].showPhotoFromAppFolder(vrUrl,
       {
           inputType: "TYPE_MONO",
