@@ -11,14 +11,11 @@ import { HttpClient } from '@angular/common/http';
 
 export class VideoPage implements OnInit {
   videoIds = [
-    'XkVayhYz9sk',
-    'e9dZQelULDk',
-    'MoudH-RPnEE',
-    'dXpVA7IAH1o'
+    'OPzWdNJHkPQ'
   ];
   videos = [];
   
-  constructor(private youtube: YoutubeVideoPlayer,private http: HttpClient) { }
+  constructor(private youtube: YoutubeVideoPlayer, private http: HttpClient) { }
 
   ngOnInit() {
     this.videoIds

@@ -9,7 +9,7 @@
     <ion-item>
       <ion-icon name="pin" slot="start"></ion-icon>
       <ion-label>{{ card.place }}</ion-label>
-      <ion-button (click)="vr(card.vr)" fill="outline" slot="end">360°</ion-button>
+      <ion-button *ngIf="!card.button" (click)="vr(card.vr)" fill="outline" slot="end">360°</ion-button>
     </ion-item>
 
     <div (click)="view(card.image, card.place)" class="thumbnail-wrapper">
