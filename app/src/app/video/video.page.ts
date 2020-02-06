@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 //import { HTTP } from '@ionic-native/http/ngx';
 import { HttpClient } from '@angular/common/http';
+import { Network } from '@ionic-native/network/ngx';
+import { Dialogs } from '@ionic-native/dialogs/ngx';
 
 @Component({
   selector: 'app-video',
@@ -15,7 +17,13 @@ export class VideoPage implements OnInit {
   ];
   videos = [];
   
-  constructor(private youtube: YoutubeVideoPlayer, private http: HttpClient) { }
+  constructor(private youtube: YoutubeVideoPlayer, private http: HttpClient, private network: Network, private dialogs: Dialogs) {
+    
+    this.network.onDisconnect().subscribe(() => {
+      this.dialogs.alert('Você não possui conexão a internet!');
+    });
+
+  }
 
   ngOnInit() {
     this.videoIds

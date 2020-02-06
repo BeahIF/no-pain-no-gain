@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
+import { Network } from '@ionic-native/network/ngx';
+import { Dialogs } from '@ionic-native/dialogs/ngx';
 
 @Component({
   selector: 'app-image',
@@ -10,7 +12,12 @@ export class ImagePage implements OnInit {
 
   public cards: Array<Object> = [];
 
-  constructor(private photoViewer: PhotoViewer) {
+  constructor(private photoViewer: PhotoViewer, private network: Network, private dialogs: Dialogs) {
+
+    this.network.onDisconnect().subscribe(() => {
+      this.dialogs.alert('Você não possui conexão a internet!');
+    });
+
     this.cards = [
       {
         "place": "Sem localização",
