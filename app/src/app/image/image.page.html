@@ -12,7 +12,7 @@
       <ion-button *ngIf="card.vr" (click)="vrView(card.vr)" fill="outline" slot="end">360°</ion-button>
     </ion-item>
 
-    <div (click)="photoView(card.image, card.place)" class="thumbnail-wrapper">
+    <div (click)="photoView(card.imageUrl, card.place)" class="thumbnail-wrapper">
       <img src="{{ card.image }}"/>
       <ion-icon name="expand" color="light" style="zoom:2.0;"></ion-icon>
     </div>
