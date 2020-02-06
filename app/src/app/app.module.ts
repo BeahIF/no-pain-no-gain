@@ -6,8 +6,12 @@ import { RouteReuseStrategy } from '@angular/router';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';
 import { HttpClientModule } from '@angular/common/http';
 
-//Photo View
+//Imagem Full Screen
 import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
+
+//Verificação de conexão
+import { Network } from '@ionic-native/network/ngx';
+import { Dialogs } from '@ionic-native/dialogs/ngx';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -25,6 +29,8 @@ import { AppComponent } from './app.component';
     SplashScreen,
     YoutubeVideoPlayer,
     PhotoViewer,
+    Network,
+    Dialogs,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
