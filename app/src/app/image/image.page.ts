@@ -28,14 +28,14 @@ export class ImagePage implements OnInit {
       },
       {
         "place": "32º01'31S - 52º06'21W",
-        "image": "assets/image/image_2.jpeg",
+        "image": "assets/image/image_2.jpg",
         "imageUrl": "https://i.ibb.co/6bJzD0G/image-2.jpg",
         "description": "",
         "vr": ""
       },
       {
         "place": "Sem localização",
-        "image": "assets/image/image_3.jpeg",
+        "image": "assets/image/image_3.jpg",
         "imageUrl": "https://i.ibb.co/k27DKTm/image-3.jpg",
         "description": "",
         "vr": ""
