@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { PhotoViewer } from '@ionic-native/photo-viewer/ngx';
 import { Network } from '@ionic-native/network/ngx';
 import { Dialogs } from '@ionic-native/dialogs/ngx';
+import { Images } from 'src/app/interfaces/images';
+import { Subscription } from 'rxjs';
+import { ImagesService } from '../services/images.service';
 
 @Component({
   selector: 'app-image',
@@ -9,15 +12,22 @@ import { Dialogs } from '@ionic-native/dialogs/ngx';
   styleUrls: ['./image.page.scss'],
 })
 export class ImagePage implements OnInit {
+  public images = new Array<Images>();
+  private imagesSubscription: Subscription;
 
-  public cards: Array<Object> = [];
+/*  public cards: Array<Object> = [];*/
 
-  constructor(private photoViewer: PhotoViewer, private network: Network, private dialogs: Dialogs) {
+  constructor(private photoViewer: PhotoViewer, private network: Network, private dialogs: Dialogs, private imagesService: ImagesService) {
+
+    this.imagesSubscription = this.imagesService.getImages().subscribe(data => {
+      this.images = data;
+    });
 
     this.network.onDisconnect().subscribe(() => {
       this.dialogs.alert('Você não possui conexão a internet!');
     });
 
+/*
     this.cards = [
       {
         "place": "Sem localização",
@@ -166,10 +176,15 @@ export class ImagePage implements OnInit {
         "description": "",
         "vr": ""
       }
-    ]     
+    ]
+*/     
   }
 
   ngOnInit() {
+  }
+
+  ngOnDestroy(){
+    this.imagesSubscription.unsubscribe();
   }
 
   photoView(photoUrl, title){

@@ -28,6 +28,10 @@ const routes: Routes = [
   {
     path: 'peld',
     loadChildren: () => import('./peld/peld.module').then( m => m.PeldPageModule)
+  },
+  {
+    path: 'update',
+    loadChildren: () => import('./update/update.module').then( m => m.UpdatePageModule)
   }
 
 ];
