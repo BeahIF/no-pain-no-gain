@@ -3,8 +3,8 @@ export interface Images {
     place?: string;
     latitude?: string;
     longitude?: string;
-    imageLocal?: string;
-    imageRemote?: string;
+    imageUrl?: string;
+    imageUri?: string;
+    vrUrl?: string;
     description?: string;
-    vr?: string;
 }
