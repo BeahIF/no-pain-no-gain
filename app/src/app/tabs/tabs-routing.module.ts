@@ -8,6 +8,16 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: 'info',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../info/info.module').then(m => m.InfoPageModule)
+          }
+        ]
+      },
+      {
         path: 'image',
         children: [
           {
@@ -38,25 +48,15 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'info',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../info/info.module').then(m => m.InfoPageModule)
-          }
-        ]
-      },
-      {
         path: '',
-        redirectTo: '/tabs/image',
+        redirectTo: '/tabs/info',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/image',
+    redirectTo: '/tabs/info',
     pathMatch: 'full'
   }
 ];

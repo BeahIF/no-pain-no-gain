@@ -18,7 +18,7 @@ export class ImagePage implements OnInit {
 
   //Scroll Infinite
   imagesPage: any = [];
-  private readonly offset: number = 4;
+  private readonly offset: number = 4; //número de cards por carregamento
   private index: number = 0;
 
   constructor(private photoViewer: PhotoViewer, private network: Network, private dialogs: Dialogs, private imagesService: ImagesService) {
