@@ -13,7 +13,7 @@
     </ion-item>
 
     <div (click)="photoView(image.imageUrl, image.place)" class="thumbnail-wrapper">
-      <img src="{{ image.imageUri }}" />
+      <ion-img src="{{ image.imageUrl }}"></ion-img>
       <ion-icon name="expand" color="light" style="zoom:2.0;"></ion-icon>
     </div>
 
@@ -23,9 +23,7 @@
   </ion-card>
 
   <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
-    <ion-infinite-scroll-content
-      loading-spinner="bubbles"
-      loading-text="Loading more data...">
+    <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Carregando...">
     </ion-infinite-scroll-content>
   </ion-infinite-scroll>
 
