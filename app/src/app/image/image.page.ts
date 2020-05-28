@@ -63,7 +63,7 @@ export class ImagePage implements OnInit {
   }
 
   vrView(vrUrl) {
-    window['VrView'].showPhotoFromAppFolder(vrUrl,
+    window['VrView'].showPhoto(vrUrl,
       {
         inputType: "TYPE_MONO",
         startDisplayMode: "DISPLAY_MODE_FULLSCREEN"
